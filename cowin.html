@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    </body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-header {
+            background-color: #045d5d;
+        }
+
+        .sub-header {
+            background-color: #007c7c;
+
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .buttons-and-dropdown {
+            display: flex;
+            align-items: center;
+        }
+
+        .buttons-group {
+            display: flex;
+            gap: 10px;
+            margin-right: 10px;
+        }
+
+        .language-dropdown {
+            margin-left: auto;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding-left: 70px;
+        }
+
+        a:hover {
+            color: yellow;
+            text-decoration: none;
+
+        }
+
+        .box {
+            height: 81.8px;
+            width: 545.33px;
+            border: 3px solid orange;
+            border-radius: 10px;
+            color: orange;
+        }
+
+        li::marker {
+            color: #007c7c;
+        }
+
+        .lists:hover {
+            text-decoration: underline;
+        }
+
+        .number {
+            top: 30px;
+            left: 15px;
+
+        }
+
+        .lis a {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+
+        }
+
+        .step1 {
+            top: 65px;
+            left: 200px;
+            z-index: 1;
+
+        }
+
+        .step2 {
+            top: 65px;
+            left: 720px;
+            z-index: 1;
+        }
+
+        .step3 {
+            top: 65px;
+            right: 210px;
+            z-index: 1;
+
+        }
+
+        .main-header {
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            position: fixed;
+            z-index: 3;
+        }
+
+        .sub-header {
+            top: 47px;
+            left: 0px;
+            right: 0px;
+            position: fixed;
+            z-index: 3;
+        }
+
+        .call {
+            right: 0;
+            height: 70px;
+            top: 30%;
+            z-index: 3;
+            border-radius: 35px 0 0 35px;
+            cursor: pointer;
+            background-image: linear-gradient(90deg, #017e7e 80%, #0c6161);
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="whole">
+        <div class="d-flex justify-content-between align-items-center text-light p-1 main-header">
+            <div class="logo">
+                <img src="https://www.cowin.gov.in/assets/images/emblem-gov.svg" alt="Logo">
+            </div>
+            <div class="buttons-and-dropdown">
+                <div class="buttons-group">
+                    <button class="btn btn-outline-light">A+</button>
+                    <button class="btn btn-outline-light">A</button>
+                    <button class="btn btn-outline-light">A-</button>
+                </div>
+                <div class="dropdown">
+                    <select class="dropdown border-0" style="background-color:  #045d5d; color: white; ">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center text-light p-1 sub-header">
+            <div class="logo">
+                <img src="https://www.cowin.gov.in/assets/images/new-logo.svg" alt="Logo">
+            </div>
+            <h1></h1>
+            <div class="button-and-links">
+                <div class="buttons-group">
+                    <a href="https://abha.abdm.gov.in/abha/v3/">ABHA (Health ID)</a>
+                    <a href="https://dashboard.cowin.gov.in/">DASHBOARD</a>
+                    <a href="https://verify.cowin.gov.in/">VERIFY CERTIFICATE</a>
+                    <a href="https://www.cowin.gov.in/faq">FAQ</a>
+                    <a href="https://www.cowin.gov.in/our-partner">PARTNERS</a>
+                    <button class="btn rounded-pill text-light border-light "
+                        style="margin-left: 30px; background-color: #007c7c;">REGISTER/LOGIN</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="position-fixed text-light p-4 call">
+                <img src="https://www.cowin.gov.in/assets/images/Support.svg" alt="">
+                Support for Covid-19
+            </div>
+        </div>
+        <div class="container-fluid text-dark"
+            style="background-image: url(precaution_banner_bg_web.c656a76b28237d8fb924.png); background-repeat: no-repeat; margin-top: 107px;">
+            <div class="row">
+                <div class="col-6 p-5">
+                    <h3>Historic & Unparalleled Achievement !<br>
+                        India's Glorious Journey of </h3>
+                    <div class=" d-flex box p-3 mt-5">
+                        <img src="https://www.cowin.gov.in/assets/images/verified.svg"
+                            style="height: 32px; width: 32px; margin: 7px;">
+                        <h2>200 CRORE VACCINATIONS</h2>
+                    </div>
+                    <p style="font-weight: 700; margin-top: 70px;"> "India is set to defeat Covid-19. Every Indian is
+                        making it possible." <br>
+                        - PM Narendra Modi </p>
+                </div>
+                <div class="col-6">
+                    <img src="/independance.svg" height="90%">
+                </div>
+            </div>
+        </div>
+        <div class=" d-flex  container-fluid align-items-center pt-5 pb-5"
+            style="background:linear-gradient(120deg, #007c7c 50%, #04c4c4 0);; height: 70px;">
+
+            <div class="col text-center text-light ">
+                <h4>TOTAL VACCINATION DOSES </h4>
+                <h3>2,20,68,66,828</h3>
+            </div>
+            <div class="col text-center"> <button class="btn btn-warning rounded-pill border-light">VIEW MORE</button>
+            </div>
+            <div class="col text-center">
+                <h4>VACCINATION DONE TODAY </h4>
+                <h3>34</h3>
+            </div>
+        </div>
+        <div class="position-relative" style="background-color: #edffff;">
+            <h3 class="col text-center mb-5">Get Vaccinated In 3 Easy Steps</h3>
+            <div class="d-flex justify-content-around ">
+                <div class="rounded position-absolute step1"
+                    style="width: 85px;height: 31px; border: 1px solid #007c7c; color: #007c7c; background-color: white;">
+                    <h5>Step 1</h5>
+                </div>
+                <div class="rounded position-absolute step2"
+                    style="width: 85px;height: 31px; border: 1px solid #007c7c; color: #007c7c; background-color: white;">
+                    <h5>Step 2</h5>
+                </div>
+                <div class="rounded position-absolute step3"
+                    style="width: 85px;height: 31px; border: 1px solid #007c7c; color: #007c7c; background-color: white;">
+                    <h5>Step 3</h5>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around pb-3">
+                <div class="card pb-3" style="width: 18rem; ">
+                    <img class="card-img-top" src="https://www.cowin.gov.in/assets/images/Step_1.svg"
+                        alt="Card image cap">
+                    <div class="card-body text-light" style=" background-color: #007c7c;">
+                        <p class="card-text">Book an Appointment on Co-WIN or Walk into any Vaccination Center </p>
+                    </div>
+                    <div>
+                        How to Book Your Appointment on Co-WIN?
+                    </div>
+                </div>
+                <div class="card pb-3" style="width: 18rem; ">
+                    <img class="card-img-top" src="https://www.cowin.gov.in/assets/images/Step_2.svg"
+                        alt="Card image cap">
+                    <div class="card-body text-light" style=" background-color: #007c7c;">
+                        <p class="card-text">Get Your Vaccination Safely at the Time of Your Appointment </p>
+                    </div>
+                    <div>
+                        Dos And Dont's For Getting Vaccinated
+                    </div>
+                </div>
+                <div class="card pb-3" style="width: 18rem; ">
+                    <img class="card-img-top" src="https://www.cowin.gov.in/assets/images/Step_3.svg"
+                        alt="Card image cap">
+                    <div class="card-body text-light" style=" background-color: #007c7c;">
+                        <p class="card-text">Download Your Vaccination Certificate from Co-WIN and Wait for Dose #2</p>
+                    </div>
+                    <div>
+                        Download Your Vaccine
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="d-flex flex-column justify-content-center container-fluid text-center" style="color: #007c7c;"
+            id="vax">
+            <h3 class="m-3">Search Your Nearest Vaccination Center</h3>
+            <h4 class="m-3" style="color: #5a5a75;">Get a preview list of the nearest centers and check availability of
+                vaccination
+                slots</h4>
+            <a href="https://selfregistration.cowin.gov.in/" target="_blank"
+                style="color: #02aeae;font: size 18px; ; font-weight: 500;text-decoration: none; ">Login to book your
+                slot</a>
+        </div>
+        <div class=" text-center p-5  ">
+            <label class="col-2 " style="color: #007c7c;font-size: 20px; font-weight: 500;">By District</label>
+            <label class="col-1 " style="font-size: 20px;font-weight: 500;">By PIN</label>
+            <label class="col-2 " style="font-size: 20px;font-weight: 500;">On the Map</label>
+        </div>
+        <div class="d-flex">
+            <div class="ml-4">
+                <div class="pt-2 rounded-pill text-center text-tertiary"
+                    style="height: 50px; font-size: large; width: 550px;border:1px solid black;border-radius: 10px;">
+                    <div class="dropdown">
+                        <div class="bs-body-bg dropdown-toggle " type="dropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Select State
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item">Kerala</a></li>
+                            <li><a class="dropdown-item">Tamil Nadu</a></li>
+                            <li><a class="dropdown-item">Karnataka</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ml-4">
+                <div class="rounded-pill text-center text-tertiary pt-2"
+                    style="height: 50px; font-size: large; width: 550px;border:1px solid black;border-radius: 10px;">
+                    <div class="dropdown ps-5">
+                        <div class="bs-body-bg dropdown-toggle " type="dropdown" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Select District
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item">Action</a></li>
+                            <li><a class="dropdown-item">Another action</a></li>
+                            <li><a class="dropdown-item">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="rounded-pill ml-2 text-light"
+                style="background-color: #007c7c;font-size: 20px; height: 40px; width: 180px;">Search</button>
+        </div>
+        <div class="d-flex container-fluid  p-5">
+            <div class="col mt-5">
+                <h3 style="color: #007c7c;font-weight: 700;">Free COVID Precaution Dose</h3>
+                <p class="text-secondary"> Now Precaution dose for 18-59 age group free at Government Vaccination
+                    Center.
+                </p>
+                <button class="rounded-pill ml-2 text-light"
+                    style="background-color: #007c7c; height: 44px; width: 205.36px;">Book Your Slot</button>
+            </div>
+            <div style="margin-right: 150px; "> <img
+                    src="https://www.cowin.gov.in/assets/images/free_covid_precaution_dose.svg" alt=""></div>
+        </div>
+        <div class="d-flex container-fluid bg-info-subtle p-5">
+            <div style="margin-left: 15;"><img src="https://www.cowin.gov.in/assets/images/reports-aefi.svg" alt="">
+            </div>
+            <div class="col mt-5 ml-5">
+                <h3 style="color: #007c7c;font-weight: 700;">Report Side Effect</h3>
+                <p class="text-secondary"> If you have experienced any side effect after COVID-19 vaccination, it can be
+                    reported on Co-WIN using your registered mobile number.
+                </p>
+                <button class="rounded-pill ml-2 text-light"
+                    style="background-color: #007c7c; height: 44px; width: 205.36px;">Report Now</button>
+            </div>
+        </div>
+        <div class="d-flex container-fluid bg-light p-5">
+            <div class="col mt-5">
+                <h3 style="color: #007c7c;font-weight: 700;">Children Vaccination</h3>
+                <li> Covovax vaccine is now available for Children of the age group 12+ yrs in Private Vaccination
+                    Center. The time span between first and second dose of Covovax is 21 days. Children can be
+                    administered with the second dose of Covovax within a month. </li>
+                <li> Children of the age group 12-14 yrs are now eligible for the Corbevax vaccine in Government
+                    Vaccination Center and in Private Vaccination Center 12+ yrs. The period between a first and second
+                    dose of Corbevax is 28 days. </li>
+                <li> Covaxin is available for Children of the age group of 15+ yrs in both Government and Private
+                    Vaccination Center. Children must be completed 4 to 6 weeks after administration of the first dose
+                    of Covaxin to take the second dose of Covaxin. Both online and walk-in are available. </li>
+                <button class="rounded-pill ml-2 text-light mt-3"
+                    style="background-color: #007c7c; height: 44px; width: 205.36px;">Book Your Slot</button>
+            </div>
+            <div style="margin-right: 150px; "> <img
+                    src="https://www.cowin.gov.in/assets/images/Children_Vaccination.svg" alt=""></div>
+        </div>
+        <div class="d-flex container-fluid  p-5" style="background-color: rgba(173, 216, 230, 0.281);">
+            <div style="margin-left: 15;"><img src="https://www.cowin.gov.in/assets/images/Date_Correction.svg" alt="">
+            </div>
+            <div class="col mt-5 ml-5">
+                <h3 style="color: #007c7c;font-weight: 700;">Vaccination Date Correction</h3>
+                <p class="text-secondary"> If the date printed on your vaccination certificate differs from the actual
+                    date of vaccine administration, you may raise a request for correction of the same by submitting a
+                    valid proof of correct vaccination date.
+                </p>
+                <button class="rounded-pill ml-2 text-light"
+                    style="background-color: #007c7c; height: 44px; width: 205.36px;">Update Date</button>
+            </div>
+        </div>
+        <div class="d-flex container-fluid bg-light p-5">
+            <div class="col mt-5">
+                <h3 style="color: #007c7c;font-weight: 700;">Precaution Dose</h3>
+                <li> All fully vaccinated adult citizens (18+ and have taken 2 doses) are eligible for precaution dose
+                    from Eligible citizens can avail precaution dose at any Government or Private Vaccination Center.
+                    Citizens should carry their Final Certificate of vaccination (with details of both earlier doses).
+                    Citizens should use the same mobile number and ID card used for earlier doses. </li>
+                <li> HCWs, FLWs and Citizens aged 60 year or more, shall continue to receive precaution dose vaccination
+                    at any CVC, including free of charge vaccination at Government Vaccination Center. </li>
+                <li> For international travel, precaution dose can be administered to such beneficiary less than 9
+                    months to at a minimum interval of 3 months (90 days) from the date of administration of the second
+                    dose as recorded on as per requirement of the destination country. All Vaccination Center in the
+                    State where precaution dose is being administered are eligible to administer precaution dose. </li>
+                <button class="rounded-pill ml-2 text-light mt-3"
+                    style="background-color: #007c7c; height: 44px; width: 205.36px;">Book Your Slot</button>
+            </div>
+            <div style="margin-right: 150px; "> <img src="https://www.cowin.gov.in/assets/images/Precaution_dose.svg"
+                    alt=""></div>
+        </div>
+        <div class="d-flex container-fluid  p-5" style="background-color: rgba(173, 216, 230, 0.281);">
+            <div style="margin-left: 15;"><img src="https://www.cowin.gov.in/assets/images/share_illustration.svg"
+                    alt="" height="300px" width="354px">
+            </div>
+            <div class="col mt-5 ml-5">
+                <h3 style="color: #007c7c;font-weight: 700;">Share Your Vaccination Status</h3>
+                <p class="text-secondary"> Be a Fighter! If you are fully or partially vaccinated, you can now share
+                    your vaccination status in your social circle. Let's encourage our friends and followers in joining
+                    India's battle against COVID-19.
+                </p>
+                <button class="rounded-pill ml-2 text-light"
+                    style="background-color: #007c7c; height: 44px; width: 205.36px;">Share Your Status</button>
+            </div>
+        </div>
+        <div class="d-flex container-fluid bg-info-subtle p-5 text-center">
+            <div class="col-12 mt-5 ml-5">
+                <h3 style="color: #007c7c;font-weight: 700;">ABHA (Health ID) and its Benefits</h3>
+                <p class="text-secondary"> ABHA (earlier known as Health ID) is an acronym for Ayushman Bharat Health
+                    Account. Using ABHA (Health ID) is the first step towards creating safer and efficient digital
+                    health records for you and your family. It enables your interaction with participating healthcare
+                    providers, and allows you to receive your digital lab reports, prescriptions and diagnosis
+                    seamlessly from verified healthcare professionals and health service providers.
+                </p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div style="margin-right: 15;"><img src="https://www.cowin.gov.in/assets/images/abha-preview.jpg"
+                    height="213px" width="476px" alt="">
+            </div>
+            <div style="margin-left: 10px;"><img src="https://www.cowin.gov.in/assets/images/abha-previewimg.jpg"
+                    height="213px" width="476px" alt="">
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <button class="rounded-pill ml-2 text-light"
+                style="background-color: #007c7c; height: 44px; width: 205.36px;">Click Here to Know More</button>
+        </div>
+        <div class="d-flex flex-column justify-content-around mt-5 text-light align-items-center"
+            style="background-color: #007c7c;">
+            <h3 class="p-3">Raise An Issue</h3>
+            <h4 class="p-3">Raise an issue or get solutions to your Co-WIN account and vaccination certificate related
+                issues
+                instantly.</h4>
+        </div>
+        <div class="d-flex mb-3 card-container justify-content-around text-black" style="background-color: #007c7c;">
+            <div class="mb-3 card rounded-1 " style="height: 192px;width: 272.25px; ">
+                <div class="card-body" style="text-align: center">
+                    <h5 class="p-1" style="text-align: center;color: #007c7c;">Merge certificates</h5>
+                </div>
+                <div class="p-2">
+                    In case you have multiple certificates of Dose 1 generated from different accounts, you can merge
+                    them into the final vaccination certificate.
+                </div>
+            </div>
+            <div class="card rounded-1" style="height: 192px;width: 272.25px;">
+                <div class="card-body " style="text-align: center">
+                    <h5 style="text-align: center;color: #007c7c;">Report unknown member</h5>
+                </div>
+                <div class="p-2">
+                    If there are any unknown members are associated with your account, you can remove them from your
+                    account by reporting unknown members.
+                </div>
+            </div>
+            <div class="card rounded-1" style="height: 192px;width: 272.25px;">
+                <div class="card-body " style="text-align: center">
+                    <h5 style="text-align: center;color: #007c7c;">Add Passport</h5>
+                </div>
+                <div class="p-2">
+                    You can link your passport to your vaccination certificate. By adding a passport to your vaccination
+                    certificate you can submit a request and get an international travel certificate.
+                </div>
+            </div>
+            <div class="card rounded-1" style="height: 192px;width: 272.25px;">
+                <div class="card-body" style="text-align: center">
+                    <h5 style="text-align: center;color: #007c7c;">Transfer Member To New Number</h5>
+                </div>
+                <div class="p-2">
+                    You can transfer members associated with your existing account to the new mobile number.
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="text-center p-3" style="color: #007c7c;">Frequently Asked Questions</h1>
+            <div class="d-flex">
+                <div class="col-6">
+                    <div class="d-flex flex-column text-center">
+                        <button class="mb-1 icon-download rounded-pill ml-2 "
+                            style="color: #007c7c; background-color: white; height: 44px; width: 205.36px;">Download</button>
+                        <img src="https://www.cowin.gov.in/assets/images/faq_Section.svg" height="236px" width="280px"
+                            class="pt-3">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <ul style="background-color: #04c4c4;" class=" rounded-top mb-3 nav nav-pills nav-justified">
+                        <li class=" d-flex nav-item">
+                            <a class="nav-link" aria-current="page" href="#">All</a>
+                            <a class="nav-link" style="color:#007c7c;" href="#">Registration</a>
+                            <a class="nav-link" style="color: #007c7c;" href="#">Vaccination Schedules</a>
+                            <a class="nav-link " style="color: #007c7c;">Scheduling Appoinment General</a>
+                        </li>
+                    </ul>
+                    <div style="height: 350px; background-color: #8585864a;"
+                        class="container-fluid pb-2 overflow-auto ">
+                        <p>
+                        <ul style="list-style: none;">
+                            <a class="d-flex justify-content-between dropdown dropdown-toggle pb-3  lists text-dark"
+                                data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <li>1. Where can I register for vaccination?</li>
+                            </a>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body border-0" style="background-color: #8585864a;">
+                                    <p>You can open the Co-WIN portal using the link and click on the www.cowin.in
+                                        “Register/Sign In”
+                                        tab to register for vaccination, and follow the steps thereafter.</p>
+                                    <img src="https://prod-cdn.preprod.co-vin.in/assets/images/BannerImage.png"
+                                        height="390px" width="600px">
+                                </div>
+                            </div>
+                            <a class="d-flex justify-content-between dropdown dropdown-toggle pb-3 lists text-dark"
+                                data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false"
+                                aria-controls="collapseExample1">
+                                <li>2. Is there a mobile app that needs to be installed to register for vaccination?
+                                </li>
+                            </a>
+                            <div class="collapse" id="collapseExample1">
+                                <div class="card card-body border-0" style="background-color: #8585864a;">
+                                    <p>
+                                        There is no authorised mobile app for registering for vaccination in India
+                                        except
+                                        Aarogya Setu and Umang Apps. You need to log into the Co-WIN portal at
+                                        www.cowin.gov.in.
+                                        Alternatively, you can also register for vaccination through the Aarogya Setu
+                                        App or
+                                        Umang apps.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="d-flex justify-content-between dropdown dropdown-toggle pb-3 lists text-dark"
+                                data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false"
+                                aria-controls="collapseExample6">
+                                <li>3. Can I register for vaccination without Aadhaar card?</li>
+                            </a>
+                            <div class="collapse" id="collapseExample6">
+                                <div class="card card-body border-0" style="background-color: #8585864a;">
+                                    <p>Yes, if you are 18 years or older (birth year 2005 or earlier), you can register
+                                        on Co-WIN portal using any of the following ID proofs:
+                                    <ol>
+                                        <li>AADHAAR Card</li>
+                                        <li>Driving License</li>
+                                        <li>PAN Card</li>
+                                        <li>Passport</li>
+                                        <li> Pension Passbook</li>
+                                        <li> NPR Smart Card</li>
+                                        <li> Voter ID (EPIC)</li>
+                                        <li> Unique Disability Identification Card (UDID)</li>
+                                        Ration Card with Photo</li>
+                                    </ol>
+                                    If you are 12 years and above on the day of registration but below 18 years old
+                                    (birth year 2006 to 21), you can register on Co-WIN portal using any of the
+                                    following ID proofs:
+                                    <ol>
+                                        <li> AADHAAR Card</li>
+                                        <li> PAN Card</li>
+                                        <li> Passport</li>
+                                        <li> Unique Disability Identification Card (UDID)</li>
+                                        <li> Ration Card with Photo</li>
+                                        <li>Student Photo ID card</li>
+                                    </ol>
+                                    </p>
+                                </div>
+                            </div>
+                            <a class=" d-flex justify-content-between dropdown dropdown-toggle pb-3 lists text-dark"
+                                data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false"
+                                aria-controls="collapseExample7">
+                                <li>4. Is there any registration charge to be paid?</li>
+                            </a>
+                            <div class="collapse" id="collapseExample7">
+                                <div class="card card-body border-0" style="background-color: #8585864a;">
+                                    <p>
+                                        No, there is no registration charge.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="d-flex justify-content-between dropdown dropdown-toggle pb-3 lists text-dark"
+                                data-bs-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false"
+                                aria-controls="collapseExample8">
+                                <li>5. Is it necessary to register again for 2nd dose or Precaution dose?</li>
+                            </a>
+                            <div class="collapse" id="collapseExample8">
+                                <div class="card card-body border-0" style="background-color: #8585864a;">
+                                    <p>
+                                        No, registration is required only once to create a beneficiary account on
+                                        Co-WIN. Thereafter, appointments can be booked, both online or onsite, and
+                                        vaccination can be availed from the same account. It is recommended that a
+                                        beneficiary should register only once so that proper records are maintained. It
+                                        is also recommended that the registration should be done through an active
+                                        mobile number to avoid problems in future.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="d-flex justify-content-between dropdown dropdown-toggle pb-3 lists text-dark"
+                                data-bs-toggle="collapse" href="#collapseExample2" aria-expanded="false"
+                                aria-controls="collapseExample2">
+                                <li>6. Is online registration mandatory for vaccination?</li>
+                            </a>
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card card-body border-0 " style="background-color: #8585864a;">
+                                    <p>No, vaccination centers provide for a limited number of on-spot registration
+                                        slots
+                                        every day. Beneficiaries can register online or walk-in to vaccination centers
+                                        where
+                                        the vaccination team staff can register a beneficiary. In general, all
+                                        beneficiaries
+                                        are recommended to register online and schedule vaccination in advance for a
+                                        hassle-free vaccination experience.</p>
+                                </div>
+                            </div>
+                            <a class="d-flex justify-content-between dropdown dropdown-toggle pb-3 lists text-dark"
+                                data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
+                                aria-controls="collapseExample3">
+                                <li>7. Which age groups can register for vaccination on the portal?</li>
+                            </a>
+                            <div class="collapse" id="collapseExample3">
+                                <div class="card card-body border-0" style="background-color: #8585864a;">
+                                    <p>
+                                        All beneficiaries who have completed 12 years of age and above on the day of
+                                        registration (birth year 21 or earlier) can register for vaccination.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="d-flex justify-content-between dropdown dropdown-toggle pb-3 lists text-dark"
+                                data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false"
+                                aria-controls="collapseExample4">
+                                <li>8. How many people can be registered in the Co-WIN portal through one mobile number?
+                                </li>
+                            </a>
+                            <div class="collapse" id="collapseExample4">
+                                <div class="card card-body border-0" style="background-color: #8585864a;">
+                                    <p>
+                                        Up to 6 people can be registered for vaccination using the same mobile number.
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="d-flex justify-content-between dropdown dropdown-toggle pb-3 lists text-dark"
+                                data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false"
+                                aria-controls="collapseExample5">
+                                <li>9.
+
+                                    How can beneficiaries with no access to smart phones, computers or internet manage
+                                    online registration?</li>
+                            </a>
+                            <div class="collapse" id="collapseExample5">
+                                <div class="card card-body border-0" style="background-color: #8585864a;">
+                                    <p>
+                                        All beneficiaries who have completed 12 years of age and above on the day of
+                                        registration (birth year 21 or earlier) can register for vaccination.
+                                    </p>
+                                </div>
+                            </div>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 450px;background-color: #4aadad53;" class="p-3 container-fluid text-center mt-3">
+        <h1 style="color: #007c7c;">
+            What's New on Co-WIN?
+        </h1>
+        <div class="d-flex container-fluid ">
+            <div class="d-flex flex-wrap col-8  overflow-auto" style="height: 370px;">
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp" style="padding-left: 0px;">
+                            <div class=" number position-absolute start-50 text-light">
+                                01
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering_new.svg" width="60px">
+                            </div>
+                            <div>
+                                <p>New feature to report side effects after covid-19 vaccination.</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    This new feature is added to Co-WIN which will allow you to report if there are
+                                    any side effects after Covid-19 Vaccination.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp1" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp1" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                02
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">Early administration of a precaution dose of covid-19
+                                    vaccine prior to the
+                                    prescribed time interval to the persons intending to undertake international
+                                    travel.</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp1">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    The precaution dose can be administered to such beneficiary less than 9 months
+                                    to at a minimum interval of 3 months (90 days) from the date of administration
+                                    of the second dose as recorded on Co-WlN as per requirement of the destination
+                                    country.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp2" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp2" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                03
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">Covovax vaccine for Children</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp2">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    Children can be registered on Co-WIN using an AADHAAR Card, PAN Card, Unique
+                                    Disability ID, Ration Card with Photo and School Photo ID Card. Children of age
+                                    group 12+ yrs can get vaccinated at Private Vaccination Center.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp3" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp3" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                04
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">Precaution dose is now available for 18+ age group at
+                                    both Government and Private Vaccination Center</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp3">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    Beneficiaries above the 18+ age group and those who have completed 6 months (26
+                                    weeks) days after the administration of the second dose, are eligible for the
+                                    Precaution dose.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp4" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp4" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                05
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">The new feature “Vaccination Date Correction” is added to
+                                    Co-WIN</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp4">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    Now, the beneficiary can raise an issue using “Vaccination Date Correction” in
+                                    case the vaccination certificate shows an incorrect date.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp5" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp5" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                06
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">Introducing new vaccine Corbevax for Children</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp5">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    Children can be registered on Co-WIN using an AADHAAR Card, PAN Card, Unique
+                                    Disability ID, Ration Card with Photo and School Photo ID Card. Children of age
+                                    group 12-14 yrs can get vaccinated in Government Vaccination Center and 12+ yrs
+                                    can get vaccinated in Private Vaccination Center.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp6" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp6" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                07
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">Now you can book an appointment for ZyCoV-D vaccine</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp6">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    A new vaccine is available for the 18+ age group. ZyCoV-D is now an approved
+                                    vaccine for the age group of 18+ yrs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp7" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp7" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                08
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">HCW/FLW and Citizens in 60+ age group can now avail
+                                    Precaution Dose</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp7">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    Precaution dose is available for HCW/FLW and Senior Citizens, 6 months (26
+                                    weeks) after date of second dose.
+                                    Precaution dose is available for now, for those who have taken Covaxin,
+                                    Covishield or Sputnik V.
+                                    Citizens in 60+ age group having co-morbidity should avail precaution dose on
+                                    medical advice.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp8" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp8" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                09
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">Vaccine available for age group 15-18 yrs</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp8">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    Children of age group 15-18 yrs can now register on Co-WIN portal using AADHAAR
+                                    Card, PAN Card, Unique Disability ID, Ration Card with Photo and School Photo ID
+                                    Card. Only COVAXIN is approved for this age group currently.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp9" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp9" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                10
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">New feature to Share Your Vaccination Status on different
+                                    social media platforms</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp9">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    This exciting new feature added to Co-WIN allows you to Share Your Vaccination
+                                    Status now among your social circle. You need to be fully or partially
+                                    vaccinated to use this feature.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp10" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp10" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                11
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">You can download your vaccination certificate for
+                                    International Travel</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp10">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    This new feature allows fully vaccinated citizens to update existing photo
+                                    identity to passport number and date of birth to get International Travel
+                                    Certificate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp11" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp11" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                12
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">Citizens can link their passports to Co-WIN issued
+                                    certificate by raising an issue in their accounts</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp11">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    This is a new feature provided where you can link your passport by entering
+                                    Passport number. In order to link your passport to the certificate you need to
+                                    login into your Co-WIN portal and then raise an issue to get your passport
+                                    linked by clicking on "Add Passport Details to my vaccination certificate"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp12" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp12" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                13
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">Introducing “Raise an Issue” to Co-WIN for all your
+                                    vaccine certificate and account related issues</p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp12">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    You can now get all your Issues related to your Vaccine Certificate at one
+                                    place. All you need to do is to login to your Co-WIN portal and click on "Raise
+                                    an Issue" . Multiple Issue options are provided. You can raise your concerned
+                                    issues accordingly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+                <div class="m-4 col-5 border border-1" style="background-color: lightgrey">
+                    <div class="position-relative">
+                        <a class="d-flex text-dark" data-bs-toggle="collapse" href="#collapseExamp13" role="button"
+                            aria-expanded="false" aria-controls="collapseExamp13" style="padding-left: 0px;">
+                            <div class="number position-absolute start-50 text-light">
+                                14
+                            </div>
+                            <div>
+                                <img src="https://www.cowin.gov.in/assets/images/numbering.svg" width="60px">
+                            </div>
+                            <div>
+                                <p style="color: #007c7c;">Check your eligibility for Dose 2 by signing in on Co-WIN
+                                    with your registered mobile number
+                                </p>
+                            </div>
+                        </a>
+                        <div class="collapse" id="collapseExamp13">
+                            <div class="card card-body border-0" style="background-color: lightgrey">
+                                <p>
+                                    Citizens administered with dose 1 can now check their eligibility for Dose 2 by
+                                    performing a single step.
+                                    "Login to your Co-WIN portal" and there you have your eligibility mention next
+                                    to your name, highlighted as "No. of Days left for Dose 2".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-toggle"></div>
+                </div>
+
+            </div>
+            <div class="col-4 ">
+                <img src="https://www.cowin.gov.in/assets/images/what's_new_on_cowin.svg" height="250px" width="259px">
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="container text-center p-5">
+        <h1 style="color: #007c7c;">India is Running The World's Largest Vaccination Drive </h1>
+        <div class="d-flex mt-5">
+            <div class="col-4">
+                <div>
+                    <h6 style="color: #007c7c; margin-right: 1300px;">Vaccines Delivered</h6>
+                    <div class="text-light rounded text-center"
+                        style="font-weight: bold; background-color: #007c7c; width: 200px;height: 35px;">
+                        2,20,68,67,262 + 15
+                    </div>
+                </div>
+                <div>
+                    <h6 style="color: #007c7c; margin-right: 1300px;">Citizens Fully Vaccinated </h6>
+                    <div class="text-light rounded text-center"
+                        style="font-weight: bold; background-color: #007c7c; width: 200px;height: 35px;">
+                        95.2 Crore + 3
+                    </div>
+                </div>
+                <div>
+                    <h6 style=" color: #007c7c; margin-right: 1300px;"> Percentage Fully Vaccinated</h6>
+                    <div class="text-light rounded text-center"
+                        style="font-weight: bold; background-color: #007c7c; width: 200px;height: 35px;">
+                        92.66%
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"><img src="Screenshot 2024-05-20 120813.png" height="350px" width="300px"></div>
+            <div class="col-4">
+                <button class="rounded-pill p-2"
+                    style="font-weight: bold;color: #007c7c; background-color: white; height: 56px; width: 225.36px;">View
+                    Vaccination
+                    Dashboard</button>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-column container-fluid text-center " style="background-color:#aaffff8b;">
+        <h1 style="color: #007c7c;">Our Partners</h1>
+
+        <div class="d-flex ">
+            <div class="col-4">
+                <img src="https://www.cowin.gov.in/assets/images/partners_page.svg" height="250px">
+            </div>
+            <div class="col-8 p-5">
+                <div class="d-flex justify-content-between">
+                    <div class="bg-light" style="height: 36px;width: 186px;"> <img
+                            src="https://www.cowin.gov.in/assets/images/digilocker_new_Logo.svg" height="33px">
+                    </div>
+                    <div class="bg-light" style="height: 36px;width: 186px;"><img
+                            src="https://www.cowin.gov.in/assets/images/umang_new_logo.svg" height="33px">
+                    </div>
+                    <div class="bg-light" style="height: 36px;width: 186px;"><img
+                            src="https://www.cowin.gov.in/assets/images/arogya_setu_logo1.svg" height="33px">
+                    </div>
+                    <div class="bg-light" style="height: 36px;width: 186px;"> <img
+                            src="https://www.cowin.gov.in/assets/images/my_gov_new_logo.svg" height="33px">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center p-5 mr-5 ">
+                    <button class="rounded-pill ml-2 mr-4 text-light"
+                        style="background-color: #007c7c; height: 44px; width: 205.36px;">View More</button>
+                    <button class="rounded-pill  "
+                        style="color: #007c7c; background-color: white; height: 44px; width: 209.36px;">Register as
+                        Partner</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lis container-fluid footer-div" style="background-color: #007c7c;">
+        <div class="row pt-4">
+            <div class="col col-6">
+                <div class="row">
+                    <div class="col text-start">
+                        <ul>
+                            <h6 class="lh-lg he-border" style="color: #99D9D9;">VACCINATION SERVICES</h6>
+                            <a href="#" class="lh-lg">Register Members</a><br>
+                            <a href="#" class="lh-lg">Search Vaccination Centers</a><br>
+                            <a href="#" class="lh-lg">Book Vaccination Slots</a><br>
+                            <a href="#" class="lh-lg">Manage Appointment</a><br>
+                            <a href="#" class="lh-lg">Download Certificate</a>
+                        </ul>
+                    </div>
+                    <div class="col text-start">
+                        <ul>
+                            <h6 class="lh-lg he-border" style="color: #99D9D9;">PLATFORMS</h6>
+                            <a href="#" class="lh-lg">Co-WIN International</a><br>
+                            <a href="#" class="lh-lg">Vaccinator</a><br>
+                            <a href="#" class="lh-lg">Department Login</a><br>
+                            <a href="#" class="lh-lg">Verify Certificates</a><br>
+                            <a href="#" class="lh-lg">Vaccination Statistics</a>
+                        </ul>
+                    </div>
+                    <div class="col text-start">
+                        <ul>
+                            <h6 class="lh-lg he-border" style="color: #99D9D9;">RESOURCES</h6>
+                            <a href="#" class="lh-lg">How To Get Vaccinated</a><br>
+                            <a href="#" class="lh-lg">Dos and Don'ts</a><br>
+                            <a href="#" class="lh-lg">Overview</a><br>
+                            <a href="#" class="lh-lg">API Guidelines</a><br>
+                            <a href="#" class="lh-lg">Open API's</a><br>
+                            <a href="#" class="lh-lg">Grievance Guidelines</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-6">
+                <div class="row support-contact-div">
+                    <div class="col col-6">
+
+                        <h6 class="lh-lg he-border" style="color: #99D9D9;">SUPPORT</h6>
+                        <a href="#" class="lh-lg">Frequently Asked Questions</a>
+                        <br>
+                        <a href="#" class="lh-lg">Certificate Corrections</a>
+
+                    </div>
+                    <div class="col col-6">
+                        <ul>
+                            <h6 class="lh-lg he-border" style="color: #99D9D9;">CONTACT US</h6>
+                            <a href="#" class="lh-lg">Helpline: +91-11-23978046 (Toll Free - 1075)</a>
+                            <a href="#" class="lh-lg">Technical Helpline: 0120-4783222</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <ul>
+                            <h6 style="color: #99D9D9;">CHILD</h6>
+                            <a href="#">1098</a>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <h6 style="color: #99D9D9;">MENTAL HEALTH</h6>
+                            <a href="#">08046110007</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <h6 style="color: #99D9D9;">SENIOR CITIZENS</h6>
+                            <a href="#">14567</a>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <h6 style="color: #99D9D9;">NCW</h6>
+                            <a href="#">7827170170</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="d-flex text-light justify-content-between col-6"
+                style="height: 60px;width: 100%;background-color: #015158;">
+                <p>Copyright © 2021 Co-WIN. All Rights Reserved</p>
+                <img src="https://www.cowin.gov.in/assets/images/national-health-authority.jpg" height="40px"
+                    width="88.9px">
+            </div>
+            <div class="d-flex justify-content-between col-6"
+                style="height: 60px ; width: 100%;background-color: #015158;">
+                <img src="https://www.cowin.gov.in/assets/images/undp-logo-vertical.svg" height="60px" width="29.6px">
+                <div class="d-flex text-light">
+                    <p class="">Terms of Service | Privacy Policy </p>
+                </div>
+                <a href="#" class="btn" style="height: 40px;width: 40px;">
+                    <img src="https://www.cowin.gov.in/assets/images/scroll-top.svg" class="image-fluid" height="38px"
+                        width="38px">
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
